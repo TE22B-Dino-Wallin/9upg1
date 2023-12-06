@@ -1,0 +1,87 @@
+body{
+    margin: 10px;
+}
+
+header{
+    border: 3px solid black;
+    border-radius: 10px;
+    
+    height: 11vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+header > h1{
+    margin: auto;
+    text-align: center;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: 0.6fr 5fr;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+aside{
+    border: 3px solid black;
+    border-radius: 10px;
+
+    
+    margin-left: 0px;
+    padding-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid{
+    border: 3px solid black;
+    border-radius: 10px;
+
+    
+    margin-right: 0px;
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+@media screen and (max-width: 819px){
+    .grid-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 819px) and (max-width: 1023px){
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.a1,.a2,.a3{
+    border: 3px solid black;
+    border-radius: 10px;
+    
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    height: 10vh;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
